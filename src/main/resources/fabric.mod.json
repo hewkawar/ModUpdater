@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "mod-updater",
+	"version": "${version}",
+	"name": "Mod Updater",
+	"description": "Mod Updater for Fabric",
+	"authors": [
+		"HewkawAr"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mod-updater/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.hewkawar.ModUpdater"
+		]
+	},
+	"mixins": [
+		"mod-updater.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
